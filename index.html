@@ -5,21 +5,547 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Новый ростер Virtus.Pro по R6S</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script>
 </head>
 
 <body>
     <h1>Ростер Virtus.Pro по Rainbow Six Siege</h1>
     <h2>Новый ростер</h2>
-    <ul>
-        <li><strong>Dark</strong> (Сезар Адриано) — Тренер</li>
-        <li><strong>Nayqo</strong> (Ильхан Эль-Джаббари) — IGL</li>
-        <li><strong>p4sh4</strong> (Павел Косенко)</li>
-        <li><strong>SkyZs</strong> (Кристофер Яулески)</li>
-        <li><strong>dan-_-</strong> (Данила Донцов)</li>
-        <li><strong>RORICK</strong> (Никита Кручинкин)</li>
-        <li><strong>Always</strong> (Дмитрий Митрахович) — Запасной</li>
-    </ul>
 
+    <div class="roster-hero">
+        <img src="images/Nayqo.webp" class="roster-player nayko" onclick="scrollToPlayer('nayqo')">
+        <img src="images/SkyZs.webp" class="roster-player skyzs" onclick="scrollToPlayer('skyzs')">
+        <img src="images/Dark.webp" class="roster-player dark" onclick="scrollToPlayer('dark')">
+        <img src="images/p4sh4.webp" class="roster-player pasha" onclick="scrollToPlayer('pasha')">
+        <img src="images/RORICK.webp" class="roster-player rorick" onclick="scrollToPlayer('rorick')">
+        <img src="images/dan-_-.webp" class="roster-player dan" onclick="scrollToPlayer('dan')">
+    </div>
+
+    <section id="nayqo">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/Nayqo.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>Nayqo</h1>
+                    <p><strong>Имя:</strong> Ильхан Эль-Джаббари</p>
+                    <p><strong>Возраст:</strong> ~22 года</p>
+                    <p><strong>Страна:</strong> Франция</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        Nayqo — один из ключевых новичков состава Virtus.pro. Ранее выступал за Gen.G Esports,
+                        где зарекомендовал себя как стабильный игрок с хорошим пониманием макроигры.
+                        В новом составе выполняет роль IGL, отвечая за координацию команды и принятие решений по ходу матча.
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section id="skyzs">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/SkyZs.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>SkyZs</h1>
+                    <p><strong>Имя:</strong> Кристофер Яулески</p>
+                    <p><strong>Возраст:</strong> ~23 года</p>
+                    <p><strong>Страна:</strong> Франция</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        SkyZs пришёл в Virtus.pro вместе с Nayqo из Gen.G Esports. Известен как гибкий игрок,
+                        способный адаптироваться под разные роли в команде. Обладает хорошей стрельбой и
+                        часто берёт на себя ключевые моменты в раундах.
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section id="rorick">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/RORICK.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>RORICK</h1>
+                    <p><strong>Имя:</strong> Никита Кручинкин</p>
+                    <p><strong>Возраст:</strong> ~21 год</p>
+                    <p><strong>Страна:</strong> Россия</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        RORICK — молодой игрок, ранее выступавший за Geekay Esports.
+                        Присоединился к Virtus.pro в рамках обновления состава.
+                        Отличается агрессивным стилем игры и уверенностью в дуэлях,
+                        что делает его важной частью атакующего потенциала команды.
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section id="dan">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/dan-_-.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>dan-_-</h1>
+                    <p><strong>Имя:</strong> Данила Донцов</p>
+                    <p><strong>Возраст:</strong> ~23 года</p>
+                    <p><strong>Страна:</strong> Россия</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        dan — один из игроков, сохранивших место в составе после перестройки.
+                        Обладает большим опытом выступлений на международной сцене и стабильно
+                        показывает высокий уровень игры. Часто выполняет роль универсального игрока (flex).
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <section id="pasha">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/p4sh4.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>p4sh4</h1>
+                    <p><strong>Имя:</strong> Павел Косенко</p>
+                    <p><strong>Возраст:</strong> 24 года</p>
+                    <p><strong>Страна:</strong> Россия</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        p4sh4 — один из самых опытных игроков Virtus.pro и текущий лидер команды.
+                        Выполняет роль IGL и отвечает за стратегическую составляющую игры.
+                        Известен своим спокойным стилем и умением адаптироваться к соперникам.
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!-- TEST -->
+    <section id="dark">
+        <div class="page">
+            <!-- Левая колонка -->
+            <aside class="sidebar">
+                <div class="profile-image">
+                    <img src="images/Dark.webp" alt="player">
+                </div>
+
+                <section class="block">
+                    <h3>CONTACT</h3>
+                    <p>05.10.2003</p>
+                    <p>player@email.com</p>
+                    <p>liquipedia.net/player</p>
+                </section>
+
+                <section class="block">
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <span>Aim</span>
+                        <span>Game sense</span>
+                        <span>Teamplay</span>
+                    </div>
+                </section>
+
+                <section class="block">
+                    <h3>LANGUAGES</h3>
+                    <p>Russian — Native</p>
+                    <p>English — B1</p>
+                </section>
+
+                <section class="block">
+                    <h3>INTERESTS</h3>
+                    <div class="tags">
+                        <span>Esports</span>
+                        <span>FPS</span>
+                        <span>Strategy</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Правая колонка -->
+            <main class="content">
+                <section class="block">
+                    <h1>Dark</h1>
+                    <p><strong>Имя:</strong> Сезар Адриано</p>
+                    <p><strong>Возраст:</strong> 24 года</p>
+                    <p><strong>Страна:</strong> Бразилия</p>
+                </section>
+
+                <section class="block">
+                    <h2>ABOUT</h2>
+                    <p>
+                        Dark — тренер команды, присоединившийся к Virtus.pro вместе с новым составом.
+                        Ранее работал с международными командами и участвовал в крупных турнирах,
+                        включая Six Invitational. Отвечает за подготовку команды, стратегии и анализ соперников.
+                    </p>
+                </section>
+
+                <section class="block">
+                    <h2>TEAM</h2>
+                    <p>Virtus.pro</p>
+                    <p>Роль: IGL / Flex</p>
+                </section>
+
+                <section class="block">
+                    <h2>EXPERIENCE</h2>
+
+                    <div class="item">
+                        <span class="year">2024 — now</span>
+                        <div>
+                            <strong>Virtus.pro</strong>
+                            <p>Основной состав команды</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <span class="year">2023</span>
+                        <div>
+                            <strong>Previous Team</strong>
+                            <p>Участие в региональных лигах</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </section>
+    <!-- 
     <h2>Старый ростер</h2>
     <ul>
         <li><strong>Zheka</strong> (Евгений Боханов) — Тренер</li>
@@ -28,20 +554,13 @@
         <li><strong>Always</strong> (Дмитрий Митрахович)</li>
         <li><strong>ShepparD</strong> (Артур Ипатов)</li>
         <li><strong>dan-_-</strong> (Данила Донцов)</li>
-    </ul>
+    </ul> -->
 </body>
 
 <footer>
-    <a href="#" onclick="showPopup()" id="myLink">
+    <a href="https://liquipedia.net/rainbowsix/Virtus.pro" onclick="showPopup()" id="myLink">
         <small>Liquipedia</small>
     </a>
-
-
-    <script>
-        function showPopup() {
-            alert("VP в Liquipedia:\nhttps://liquipedia.net/rainbowsix/Virtus.pro")
-        }
-    </script>
 </footer>
 
 </html>
