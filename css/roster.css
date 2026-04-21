@@ -1,4 +1,4 @@
-.roster-hero {
+.roster_container {
     position: relative;
     width: 100%;
     height: 500px;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.roster-player {
+.roster_player {
     --spread: 1;
     --scale: 1;
     --xPos: calc(var(--offset) * var(--spread));
@@ -19,15 +19,22 @@
     bottom: 0;
     height: 70%;
     object-fit: contain;
-
     transform: translateX(var(--xPos)) scale(var(--scale));
     transition: transform 0.2s ease;
-
     z-index: 1;
 }
 
+.roster_container:hover .roster_player {
+    --spread: 1.1;
+}
+
+.roster_player:hover {
+    --scale: 1.1;
+    z-index: 10;
+}
+
 @media (max-width: 768px) {
-    .roster-hero {
+    .roster_container {
         display: flex;
         overflow-x: auto;
         gap: 16px;
@@ -36,21 +43,12 @@
         padding: 0 16px;
     }
 
-    .roster-player {
+    .roster_player {
         position: static;
         transform: none;
         height: 200px;
         flex-shrink: 0;
     }
-}
-
-.roster-hero:hover .roster-player {
-    --spread: 1.1;
-}
-
-.roster-player:hover {
-    --scale: 1.1;
-    z-index: 10;
 }
 
 .nayqo {

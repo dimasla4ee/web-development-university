@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/roster-hero.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/roster.css">
     <link rel="stylesheet" href="/css/player-block.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -18,16 +20,28 @@
     <script src="script.js" defer> </script>
 </head>
 
+<header class="header">
+    <nav class="nav">
+        <a href="#roster" class="nav-link active">Ростер</a>
+        <a href="#nayqo" class="nav-link">Nayqo</a>
+        <a href="#skyzs" class="nav-link">SkyZs</a>
+        <a href="#rorick" class="nav-link">RORICK</a>
+        <a href="#dan" class="nav-link">dan</a>
+        <a href="#pasha" class="nav-link">p4sh4</a>
+        <a href="#dark" class="nav-link">Dark</a>
+    </nav>
+</header>
+
 <body>
     <h1>Ростер Virtus.Pro по Rainbow Six Siege</h1>
-    <section id="top">
-        <div class="roster-hero">
-            <img src="images/roster/Nayqo.webp" class="roster-player nayqo" onclick="scrollToPlayer('nayqo')">
-            <img src="images/roster/SkyZs.webp" class="roster-player skyzs" onclick="scrollToPlayer('skyzs')">
-            <img src="images/roster/Dark.webp" class="roster-player dark" onclick="scrollToPlayer('dark')">
-            <img src="images/roster/p4sh4.webp" class="roster-player pasha" onclick="scrollToPlayer('pasha')">
-            <img src="images/roster/RORICK.webp" class="roster-player rorick" onclick="scrollToPlayer('rorick')">
-            <img src="images/roster/dan-_-.webp" class="roster-player dan" onclick="scrollToPlayer('dan')">
+    <section id="roster">
+        <div class="roster_container">
+            <img src="images/roster/Nayqo.webp" class="roster_player nayqo" onclick="scrollToPlayer('nayqo')">
+            <img src="images/roster/SkyZs.webp" class="roster_player skyzs" onclick="scrollToPlayer('skyzs')">
+            <img src="images/roster/Dark.webp" class="roster_player dark" onclick="scrollToPlayer('dark')">
+            <img src="images/roster/p4sh4.webp" class="roster_player pasha" onclick="scrollToPlayer('pasha')">
+            <img src="images/roster/RORICK.webp" class="roster_player rorick" onclick="scrollToPlayer('rorick')">
+            <img src="images/roster/dan-_-.webp" class="roster_player dan" onclick="scrollToPlayer('dan')">
         </div>
 
     </section>
@@ -801,28 +815,26 @@
     </ul> -->
 </body>
 
-<header class="header">
-    <nav class="nav">
-        <a href="#top" class="nav-link active">Ростер</a>
-        <a href="#nayqo" class="nav-link">Nayqo</a>
-        <a href="#skyzs" class="nav-link">SkyZs</a>
-        <a href="#rorick" class="nav-link">RORICK</a>
-        <a href="#dan" class="nav-link">dan</a>
-        <a href="#pasha" class="nav-link">p4sh4</a>
-        <a href="#dark" class="nav-link">Dark</a>
-    </nav>
-</header>
-
 <footer>
-    <a href="https://liquipedia.net/rainbowsix/Virtus.pro" id="myLink">
-        <small>Liquipedia</small>
-    </a>
-    <a href="https://virtus.pro/teams/rainbow-six-siege-x" id="myLink">
-        <small>Virtus.pro</small>
-    </a>
-    <a href="https://siege.gg/teams/272-virtuspro" id="myLink">
-        <small>Siege.gg</small>
-    </a>
+    <div class="footer_container">
+        <!-- Liquipedia link -->
+        <a href="https://virtus.pro/teams/rainbow-six-siege-x" target="_blank" class="footer_item">
+            <p class="header-1 text-align-center">Liquipedia</p>
+        </a>
+
+        <!-- Virtus.pro link -->
+        <a href="https://liquipedia.net/rainbowsix/Virtus.pro" target="_blank" class="footer_item">
+            <div class="footer_divider hide-tablet"></div>
+            <p class="header-1 text-align-center">Virtus.pro</p>
+        </a>
+
+        <!-- Siege.gg link -->
+        <a href="https://siege.gg/teams/272-virtuspro" target="_blank" class="footer_item">
+            <div class="footer_divider"></div>
+            <p class="header-1 text-align-center">Siege.gg</p>
+        </a>
+
+    </div>
 </footer>
 
 </html>
