@@ -5,9 +5,67 @@ html {
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
-    font-family: sans-serif;
+    font-family: Play;
+    padding-top: 60px;
 }
 
 a {
     text-decoration: none;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.play-regular {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play-bold {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 12px 24px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link.active {
+    opacity: 1;
+    text-shadow:
+        0 0 3px #fff;
+}
+
+.text-nav {
+    color: var(--color-secondary);
+    text-decoration: none;
+    opacity: 1;
+    text-shadow:
+        0 0 2px var(--color-secondary);
 }
