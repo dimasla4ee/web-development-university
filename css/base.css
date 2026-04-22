@@ -45,21 +45,25 @@ section {
     padding: 12px 24px;
 }
 
-.nav-link {
+.nav-link,
+.footer-link {
     color: white;
     text-decoration: none;
     opacity: 0.6;
     transition: 0.2s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.footer-link:hover {
     opacity: 1;
+    text-shadow:
+        0 0 2px #fff;
 }
 
 .nav-link.active {
     opacity: 1;
     text-shadow:
-        0 0 3px #fff;
+        0 0 2px #fff;
 }
 
 .text-nav {
@@ -74,9 +78,7 @@ section {
     text-align: center;
 }
 
-.header-1 {
-    color: white;
-    text-decoration: none;
+.glow_strong {
     text-shadow:
-        0 0 1px #fff;
+        0 0 3px #fff;
 }

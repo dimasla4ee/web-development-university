@@ -3,11 +3,32 @@
     width: 100%;
     height: 500px;
     margin: 50px auto;
-    background-color: var(--color-primary);
+    background-color: var(--color-roster);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+}
+
+.roster_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/roster/roster-graffiti.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.roster_player {
+    z-index: 1;
 }
 
 .roster_player {
@@ -20,8 +41,15 @@
     height: 70%;
     object-fit: contain;
     transform: translateX(var(--xPos)) scale(var(--scale));
-    transition: transform 0.2s ease;
+    /* ДОБАВЛЕНО: filter в transition для плавного затемнения */
+    transition: transform 0.2s ease, filter 0.3s ease; 
     z-index: 1;
+}
+
+/* Если внутри контейнера наведен курсор НА ЛЮБОГО игрока, 
+   то все игроки, на которых курсор НЕ НАВЕДЕН, затемняются */
+.roster_container:has(.roster_player:hover) .roster_player:not(:hover) {
+    filter: brightness(0.7); /* 0.4 - степень затемнения. 0 - полностью черный, 1 - без изменений */
 }
 
 .roster_container:hover .roster_player {
