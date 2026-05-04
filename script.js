@@ -1,13 +1,12 @@
 function scrollToPlayer(id) {
-    document.getElementById(id).scrollIntoView(
-        {
-            behavior: 'smooth'
-        }
-    );
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
 }
 
 const links = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section[id]");
+
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
@@ -20,6 +19,8 @@ const observer = new IntersectionObserver(
                 if (activeLink) {
                     activeLink.classList.add("active");
                 }
+
+                history.replaceState(null, null, `#${id}`);
             }
         });
     },
